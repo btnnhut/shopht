@@ -85,3 +85,62 @@ Add the line "127.0.0.1 shopht.com" to the host file
 Restart xampp and open Browser
 
 ![Laravel07](./img/Laravel07.png)
+
+---
+
+## Routing
+
++ #### Create page: about, contact, welcome and master
+
+	+ Create welcome.blade.php
+
+	```php
+	<h1>Welcome to Page Home</h1>
+	<a href="{{ url('/about') }}">About</a>
+	<a href="{{ url('/contact') }}">Contact</a>
+	```
+
+	+ Create master.blade.php
+
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Shop boot HT</title>
+	</head>
+	<body>
+		@section('sidebar')
+		<p>This is parent/ Master Page</p>
+		@show
+		<div>
+			@yield('component')
+		</div>
+	</body>
+	</html>
+	```
+
+	+ create about.blade.php
+
+	```php
+	@extends('master')
+	@section('sidebar')
+		@parent
+		<p>This About Sidebar</p>
+	@endsection
+	@section('component')
+		<h1>About Us Page</h1>
+	@endsection
+	```
+
+	+ Create contact.blade.php
+
+	```php
+	@extends('master')
+	@section('sidebar')
+		<p>This Contact Page</p>
+		@parent
+	@endsection
+	@section('component')
+		<h1>Page Contact</h1>
+	@endsection
+	```

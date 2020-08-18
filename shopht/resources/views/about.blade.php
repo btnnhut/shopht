@@ -1,1 +1,1 @@
-<h1>This is Page About</h1>
+@extends('master')
