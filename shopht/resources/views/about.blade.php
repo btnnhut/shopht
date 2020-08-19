@@ -1,1 +1,1 @@
-@extends('master')
+@extends('front.layout.master')
