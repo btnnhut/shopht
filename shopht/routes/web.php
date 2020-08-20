@@ -24,6 +24,9 @@ Route::get('/details',['uses'=>'DetailsPageController@index','as'=>'index']);
 Route::group(['prefix'=>'back'],function(){
 	// Route::get('/','Admin\DashboardController@index');
 	Route::get('/',['uses'=>'Admin\DashboardController@index','as'=>'index']);
+	Route::get('/category',['uses'=>'Admin\CategoryController@index','as'=>'index']);
+	Route::get('/category/create',['uses'=>'Admin\CategoryController@create','as'=>'create']);
+	Route::get('/category/edit',['uses'=>'Admin\CategoryController@edit','as'=>'edit']);
 });
 
 // Route::get('/home','HomePageController@index');
