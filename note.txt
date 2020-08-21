@@ -1,0 +1,10 @@
+install
++ https://laravelcollective.com/docs/5.2/html#installation
+
+composer require "laravelcollective/html":"^5.2.0"
+
+	- 'providers'
+		Collective\Html\HtmlServiceProvider::class,
+	- 'aliases' 
+		'Form' => Collective\Html\FormFacade::class,
+		'Html' => Collective\Html\HtmlFacade::class,

@@ -1,0 +1,13 @@
+1.composer install
+
+	composer update  (**)
+
+2. copy: .env.example -> .env
+
+3. php artisan key:generate
+
+if exists database
+
+4. Specifield data file .env
+
+5. php artisan migrate
