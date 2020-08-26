@@ -8,6 +8,6 @@ class ListingPageController extends Controller
 {
     //
     public function index(){
-    	return view('front.listing');
+    	return view('front.content.listing');
     }
 }

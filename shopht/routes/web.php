@@ -29,5 +29,8 @@ Route::group(['prefix'=>'back'],function(){
 	Route::get('/category/edit',['uses'=>'Admin\CategoryController@edit','as'=>'edit']);
 });
 
+Route::get('/query',['uses'=>'DbController@index','as'=>'index']);
+Route::get('/joining','DbController@joining');
+Route::get('/model','DbController@model');
 // Route::get('/home','HomePageController@index');
 // Route::get('/home',['uses'=>'HomePageController@index','as'=>'index']);

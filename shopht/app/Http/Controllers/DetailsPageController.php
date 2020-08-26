@@ -8,6 +8,6 @@ class DetailsPageController extends Controller
 {
     //
     public function index(){
-    	return view('front.details');
+    	return view('front.content.details');
     }
 }
