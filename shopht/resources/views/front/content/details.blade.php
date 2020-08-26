@@ -1,4 +1,4 @@
-@extends('front.layout.master')
+@extends('front.master')
 @section('content')
 
 <section id="entity_section" class="entity_section">

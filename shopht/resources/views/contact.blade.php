@@ -1,4 +1,4 @@
-@extends('master')
+@extends('front.master')
 @section('sidebar')
 	<p>This Contact Page</p>
 	@parent
